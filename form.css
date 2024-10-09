@@ -16,8 +16,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        height: 100vh;
         width: 100%;
-        height: fit-content;
     }
    h1{
     font-size: 30px;
@@ -41,7 +41,7 @@
     justify-content: space-between;
     padding: 20px;
 }
-.user-info label{
+.container label{
     color: #fff;
     font-size: 20px;
     font-weight: 400;
@@ -53,11 +53,6 @@
     border-radius: 7px;
     border: 1px solid #7e7e90;
     padding: 0 10px;
-}
-form label{
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
 }
 textarea{
     height: 60px;
@@ -86,7 +81,7 @@ fieldset{
     width: 20px;
     padding: 0 10px;
     margin-left: 2em;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 300;
 }
 .form-submit-btn{
