@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(conference.jpeg);
+    background: url(image/conference.jpeg);
      background-size: cover;
     font-family: sans-serif;
 }
