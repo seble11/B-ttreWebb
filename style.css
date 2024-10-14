@@ -1,47 +1,28 @@
 *{
+    margin: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; 
 }
-header{
-    background: #0056b3;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
-    margin-bottom: 1em;
+:root {
+    --header-bg: #0056b3;
+    --highlight-color: #ff523b;
+    --btn-bg: #50508B;
 }
-header h1 p{
-    color: #ffffff;
-    text-align: center;
+header{ 
+    background:var(--header-bg); 
+    color: #ffffff; 
+    padding: 15px 0; 
+    text-align: center; 
+    margin-bottom: 1em; 
 }
 .small-container{
-    max-width:100%;
-    margin: 0;
-    padding:20px;
-    font-size:1em;
-    font-weight: 400;
-    color: #000000;
-}
-.content{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 200px;  
-    line-height: 30px;
-}
-h1{
-    text-align: center;
-}
-.seminar img{
-    width: 100%;
-    max-height:50vh;
-    position: relative;
+    margin: 2em; 
+    padding: 0 25px; 
 }
 .title{
     text-align: center;
-    margin: 0 auto 50px;
     position: relative;
     line-height: 60px;
     color:#555;
@@ -49,7 +30,7 @@ h1{
 .title::after{
     align-items: center;
     content: ' ';/*content are background 🎮*/
-    background: #ff523b;
+    background:var(--highlight-color);
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -60,62 +41,87 @@ h1{
 .title:hover{
     color: turquoise;
 }
-.days h2{
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+    text-align: center;
+    
+}
+h3, p{
+    margin-bottom: 1em; 
+    font-size: 16px;
+}
+
+.content h2 {
     font-weight: 400;
     padding-left: 1em;
     text-decoration: underline;
 }
-.content .days{
-    flex-grow: 1;
-    padding: 10px;
-    margin: 1em;
-    margin-bottom: 10px; 
-    transition: transform 0.5s;/*mecheresha lay rating behala*/
-    background: #dcdcdc; 
-    border-radius: 1em; 
-}
-.btn{
-    display: inline;
-    background: #A81100 ;
-    color: white;
-    padding:1em 1em;
-    margin:1em;
-    border-radius: 10px;
+li a{
+
     text-decoration: none;
-    width: 5em;
-    box-shadow: 0 0.3em 0.3em rgb(65, 54, 140);
+    color: #000000;
+}
+
+.days{
+    line-height: 50px;
+    margin: 1em 0; 
+    padding: 10px;
+    background: #9C9C9C; 
+    border-radius: 1em;
+    color: #000000;
+}
+.center embed{
+    display: block;
+    padding: 20px 0;
+    margin-left: 25em;
+}
+
+.btn {
+    display: block;
+    width: 150px;
+    max-height: 70px;
+    text-decoration: none;
+    border-radius: 10px;
+    background: var(--btn-bg);
+    cursor: pointer; 
+    font-size: 1.2em;
+    margin: 1em auto; /* Center the button */
+    text-align: center;
+    box-shadow: 0 0.5em 0.5em black;
+    color: #fff;;
 }
 .btn:hover{
-    background:#563434;
-
+    background: #0051AD;
+    border: inset;
 }
-footer{
-    display: inline-block;
-    text-align: center;
+footer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     padding: 20px 0;
     background: #0056b3;
-    bottom: 0;
     width: 100%;
-}
-footer p{
-    color: #ffffff;
+    position: relative; 
 }
 
+/*media query*/
+@media (max-width: 768px) {
+body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
 
+.small-container {
+    padding: 10px; /* Reduce padding */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.days {
+    display: block; /* Stack seminar days */
+    width: 100%; /* Full width on smaller screens */
+}
+}
