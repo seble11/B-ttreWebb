@@ -14,23 +14,26 @@
         <p>Joing us for three days of FrontEnd Developer Seminars</p>
     </header>
     <main>
-       <section class="container">
+        <div class="reg-form">
+       <div class="container">
         <form action="#">
             <h1>Registration</h1>
             <div class="user-info">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required/>
+               <p><label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+                </p>
+
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter Email Address" required/>
+                <input type="text" id="email" name="email" placeholder="Enter Email Address" required>
                 <label for="addres">Address</label>
                 <input type="text" id="addres" name="addres" placeholder="">
             </div>
-            <fieldset class="box1">
+            <!------<fieldset class="box1">
                 <legend>Conference Pass</legend>
                 <label> <input type="checkbox" name="pass" value="day-1"/>Day Pass(18 october)</label>
                 <label> <input type="checkbox" name="pass" value="day-2">Day Pass(19 october)</label>
                 <label> <input type="checkbox" name="pass" value="day-3">Day Pass(20 october)</label>
-            </fieldset>
+            </fieldset>------>
             <fieldset class="box1">
                 <legend>Food Menu</legend>
                 <label> <input type="radio" name="food" value="meat">Meat</label>
@@ -40,11 +43,15 @@
             <label for="allergies">Allergies (if any)</label>
             <textarea name="allergies" id="allergies"></textarea>
             <div class="form-submit-btn">
-                <input type="submit" value="Register">
+                <input type="button" value="Register"/>   
             </div>
-
         </form>
-       </section> 
+    </div> 
+</div> 
     </main>
+    <hr>
+    <footer>
+      <p>&copy; 2024 Gothenburg Conference. All rights reserved.</p>
+  </footer>
 </body>
 </html>
